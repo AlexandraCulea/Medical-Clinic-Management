@@ -1,0 +1,17 @@
+
+spring:
+  application:
+    name: clinica
+  datasource:
+    url: jdbc:mysql://localhost:3307/clinica?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    username: app
+    password: app123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate.format_sql: true
+      
+server:
+  port: 8080
